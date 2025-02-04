@@ -1,53 +1,104 @@
 .MainSearch {
-    /* background-repeat: no-repeat; */
-    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0px;
+    /* background-position: center;
     background-size: cover;
-    height: 90vh;
-    /* width: 100%; */
-    /* background-color: black; */
+    height: 90vh; */
 }
-#vid {
+/* #vid {
     object-fit: cover;
     position: absolute;
     right: 0;
     bottom: 0;
     max-width: 100%;
-    /* min-height: 100%; */
-}
-.MainSearch .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    position: relative;
-    /* bottom: 0; */
-    width: 100vw;
-    /* padding: 20px; */
-    z-index: 5;
-    margin-left: 0;
-        padding-bottom: 73.5vh;
-    /* padding-bottom: 900px; */
-}
-.MainSearch .container {
-    /* background: rgba(0, 0, 0, 0.5); */
-    
+} */
+.MainSearch .video-bg {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures video covers the whole container */
+    z-index: -1;
+    /* Puts the video behind the content */
+}
+
+.MainSearch .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
     margin-left: 0;
     padding-bottom: 73.5vh;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center; */
+}
+.MainSearch .overlay-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
 }
 .MainSearch h1 {
     color: rgb(255, 255, 255);
     font-size: 60px;
     text-align: center;
-    /* margin-left: 0px; */
 }
+/* Styling for the button */
+.MainSearch .overlay-button {
+    background-color: rgb(3, 82, 10);
+    color: rgb(2, 59, 7);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.MainSearch .overlay-button:hover {
+    background-color: rgb(42, 131, 49);
+    color: white;
+    transform: scale(1.1);
+}
+   /* .MainSearch .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 100vw;
+    z-index: 5;
+    margin-left: 0;
+    padding-bottom: 73.5vh;
+}  */
+/* .MainSearch .container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 73.5vh;
+} */
+/* 
+.MainSearch h1 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-align: center;
+}
+
 .MainSearch p {
     color: rgb(255, 255, 255);
     text-align: center;
-    /* opacity: 0.8; */
-}
+} */
 
 
-.MainSearch button {
+/* .MainSearch button {
     size: 100px;
     background:rgb(3, 82, 10);
         border: none;
@@ -58,18 +109,21 @@
         font-size: 16px;
         font-weight: bold;
         margin-top: 130px;
-        /* padding: 12px 24px; */
         transition: all 0.3s ease;
-        /* margin-left: 50%; */
         text-align: center;
         width: 400px;
         height: 100px;
-}
+} */
+/* .MainSearch .btn1 {
+    color: white;
+} */
 
-@media screen and (max-width: 800px) {
-    .MainSearch .container {
+
+
+/* @media screen and (max-width: 800px) {
+    /* .MainSearch .container {
         padding-top: 30%;
-    }
+    } 
 
     form {
         display: flex;
@@ -83,4 +137,4 @@
     form input {
         width: 50%;
     }
-}
+} */

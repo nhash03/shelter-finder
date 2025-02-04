@@ -1,22 +1,9 @@
 import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import { Link } from 'react-router-dom'
 import { footer } from "../../data/Data"
 import "./footer.css"
 
 function Footer ()  {
-// const linkList = document.getElementById('linkList');
-// const links = linkList.getElementsByTagName('li');
-
-// for (let i = 0; i < links.length; i++) {
-//   const linkUrl = links[i].textContent;
-//   const link = document.createElement('a');
-//   link.href = linkUrl;
-//   link.textContent = linkUrl;
-//   links[i].innerHTML = '';
-//   links[i].appendChild(link);
-// }
-
   return (
     <>
       <section className='footerContact'>
@@ -24,7 +11,6 @@ function Footer ()  {
           <div className='send flex'>
             <div className='text'>
               <h1>Do You Have Questions ?</h1>
-              {/* <p>We'll help you have a new start.</p> */}
             </div>
             <button className='btn5'>Contact Us Today</button>
           </div>
@@ -58,7 +44,7 @@ function Footer ()  {
         </div>
       </footer>
       <div className='legal'>
-        <span>© 2023 ShelterFinder. Designd By Negin and Setare.</span>
+        <span>© 2023 ShelterFinder. Designd By Negin.</span>
       </div>
     </>
   )

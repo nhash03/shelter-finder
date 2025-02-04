@@ -1,26 +1,40 @@
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import MapComponent from '../pages/MapComponent';
+import React, { useState, useEffect } from 'react';
+
 import "./nearby.css"
 
 function Nearby ()  {
-    return (
+    const [data, setData] = useState([]);
+
+  useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://127.0.0.1:5001/get_locations');
+      const result = await response.json();
+      console.log(result)
+      setData(result['data']);
+    } catch (err) {
+      console.log(err)
+    }
+  };
+
+  fetchData();
+}, []);
+
+
+    return ( data &&(
       <>
       <section className='Nearby'>
         <div className = "container">
           <div className='title'>
             <h1>Nearby Places to Stay</h1>
           </div>
-            <LoadScript googleMapsApiKey="AIzaSyBHxfYdVB4thHzdJx_745JuI9acH7jDjKk">
-            <GoogleMap
-                 center={{ lat: 37.7749, lng: -122.4194 }}
-                          zoom={8}
-                mapContainerStyle={{ height: '70%', width: '80%', margin: "0px auto"}}
-    >
-              <Marker position={{ lat: 37.7749, lng: -122.4194 }} />
-          </GoogleMap>
-          </LoadScript>
+              <div >
+             <MapComponent coordinates={data} />
+             </div>
         </div>
       </section>
       </>
-    ) 
+    ) )
   } 
 export default Nearby

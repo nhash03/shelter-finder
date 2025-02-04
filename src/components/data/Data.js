@@ -1,5 +1,6 @@
 import {BsFacebook} from 'react-icons/bs';
 import {CiLinkedin, CiTwitter, CiInstagram} from 'react-icons/ci';
+import React from 'react';
 export const nav = [
   {
     text: "home",
@@ -146,7 +147,7 @@ export const footer = [
   },
   {
     title: "JOIN US",
-    text: [{ list: ["HostProfile", "Pages"]}, { list: ["GuestProfile", "Pages"] }, ],
+    text: [{ list: ["HostProfile", "http://localhost:3000/HostPage"]}, { list: ["GuestProfile", "http://localhost:3000/Search"] }, ],
   },
   {
     title: "FIND",

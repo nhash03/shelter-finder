@@ -1,0 +1,40 @@
+.account {
+    padding-top: 100px;
+    height: 100vh;
+    background-color: black;
+}
+
+.account label {
+    color: white;
+    font-size: 30px;
+    margin-top: 90px;
+    margin-left: 100px;
+}
+
+.account form {
+    display: block;
+}
+
+.account input {
+    width: 800px;
+    height: 50px;
+    border: 3px solid white;
+    margin-left: 100px;
+    margin-top: 50px;
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+
+.account button {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 200px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+.account .orange {
+    background-color: orange;
+}

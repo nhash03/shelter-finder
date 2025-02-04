@@ -3,17 +3,20 @@
     height: 150vh;
     background-color: black;
     display: block;
-} 
+}
+
 .search label {
     color: white;
     font-size: 30px;
     margin-top: 90px;
     margin-left: 100px;
-        display: block;
+    display: block;
 }
+
 .search form {
-        display: block;
+    display: block;
 }
+
 .search Form {
     width: 800px;
     height: 50px;
@@ -23,8 +26,10 @@
     display: block;
     color: white;
     font-size: 30px;
-    
+    height: 50vh;
+
 }
+
 .search Button {
     display: block;
     margin-top: 50px;
@@ -33,22 +38,28 @@
     text-align: center;
     margin-left: 300px;
 }
+
 .search .orange {
     background-color: orange;
-} */
+}
+
+*/
+
 /* General form container styles */
 /* General form styling */
-.form-label {
+.label{
     color: white;
     font-size: 20px;
     margin: 20px;
-        display: block;
+    display: block;
 }
+
 .form-container {
     background-color: #000;
     /* Black background */
     display: block;
     padding: 2rem;
+    height: 50vh;
     /* border-radius: 8px; */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     /* max-width: 500px; */
@@ -58,7 +69,7 @@
 }
 
 /* Label styling */
-.form-container .form-label {
+.form-container label{
     color: #d3d3d3;
     /* Light grey for labels */
     display: block;
@@ -66,11 +77,12 @@
 }
 
 /* Input styling */
-.form-container .form-control {
+.form-container input {
     background-color: #1a1a1a;
     /* Dark grey input background */
     color: #fff;
     width: 100%;
+    height: 100%;
     /* margin-right: 200px; */
     display: block;
     /* White text for inputs */
@@ -80,23 +92,24 @@
     border-radius: 5px;
     height: 30px;
 }
-.form-container .form-control[type="password"]{
+
+.form-container input[type="password"] {
     padding: 10px;
-        display: block;
+    display: block;
 }
 
-.form-container .form-control:focus {
+.form-container input:focus {
     background-color: #222;
     /* Slightly brighter grey on focus */
     border-color: #f39c12;
     /* Highlight with orange */
     box-shadow: 0 0 5px #f39c12;
     /* Glow effect */
-        display: block;
+    display: block;
 }
 
 /* Button styling */
-.form-container .btn {
+.form-container button {
     background-color: #f39c12;
     /* Orange button */
     border: none;
@@ -104,23 +117,23 @@
     width: 100%;
     /* Black text */
     font-weight: bold;
-        margin: 20px;
+    margin: 20px;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-        display: block;
+    display: block;
 }
 
-.form-container .btn:hover {
+.form-container button:hover {
     background-color: #d35400;
-        display: block;
+    display: block;
     /* Darker orange on hover */
 }
 
 /* Checkbox styling */
 .form-container .form-check-label {
     color: #d3d3d3;
-        display: block;
+    display: block;
     /* Light grey for checkbox labels */
 }
 
@@ -128,9 +141,9 @@
     background-color: #f39c12;
     /* Orange for checked boxes */
     border-color: #f39c12;
-        display: block;
+    display: block;
 }
 
-.form-container input{
+.form-container input {
     display: block;
 }

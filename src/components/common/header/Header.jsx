@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import './header.css';
-import sample from './logo.png';
 
 function Header ()  {
   
